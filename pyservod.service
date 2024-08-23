@@ -1,0 +1,14 @@
+[Unit]
+Description=ServoBlaster remplacement
+After=multi-user.target
+
+[Service]
+Type=idle
+# MUST SET YOUR USERNAME HERE.
+User=root
+ExecStart=/usr/local/bin/servod
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
