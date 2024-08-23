@@ -2,12 +2,10 @@
 
 FIFO = '/dev/servoblaster'
 
-# reader.py
+
 import os
-import string
 from pathlib import Path
 import RPi.GPIO as GPIO
-import time
 
 
 fifo_path = Path(FIFO)
